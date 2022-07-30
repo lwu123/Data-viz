@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  circle {
+    fill: steelblue;
+  }
+  
+  .line-path {
+    fill: none;
+    stroke: rgb(26, 27, 105);
+    stroke-width: 5;
+    stroke-linejoin: round;
+  }
+  
+  text {
+    font-family: sans-serif;
+  }
+  
+  .tick text {
+    font-size: 2.0em;
+    fill: #000000;
+  }
+  
+  .tick line {
+    stroke: #C0C0BB;
+  }
+  
+  .axis-label {
+    font-size: 2.5em;
+    fill: #8E8883;
+  }
+  
+  .title {
+    font-size: 2.0em;
+    fill: #635F5D;
+  }
+
+  .annotation-connector .connector {
+    stroke: black;
+  }
+  .annotation-note-content text {
+    fill: black;
+  }
