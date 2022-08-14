@@ -93,7 +93,6 @@
           dy: 300,
           dx: 300,
           subject: { radius: 20, radiusPadding: 5 },
-      //can use x, y directly instead of data
       data: { date: "18-Sep-09", close: 185.02 },
       className: "show-bg",
       dy: -60,
@@ -102,18 +101,13 @@
 
     ]
       
-      //Skipping setting domains for sake of example
       const x = d3.scaleTime().range([50, 200])
       const y = d3.scaleLinear().range([150, 0])
       
       const makeAnnotations = d3.annotation()
         .editMode(true)
-        //also can set and override in the note.padding property
-        //of the annotation object
         .notePadding(15)
         .type(type)
-        //accessors & accessorsInverse not needed
-        //if using x, y in annotations JSON
         .annotations(annotations)
       
       d3.select("svg")
